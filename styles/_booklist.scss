@@ -1,0 +1,120 @@
+@import "variables";
+
+.list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5% 0;
+  background: linear-gradient(120deg, #c4c1e0 10%, #746cba 81%);
+
+  &-process {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      align-items: center;
+      background: white;
+      padding: 7px;
+      gap: 7px;
+      border-radius: 0 20px 20px 0;
+      cursor: pointer;
+      text-decoration: none;
+      color: purple;
+      font-weight: 600;
+    }
+    &-right {
+      display: flex;
+      .input {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 7px;
+        border-radius: 20px 0 0 20px;
+        border-right: 3px solid black;
+        button{
+          border: none;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+        }
+        input {
+          width: 130px;
+          padding: 7px;
+          border: none;
+          border-radius: 20px;
+          outline: none;
+        }
+      }
+      select {
+        width: 180px;
+        border-radius: 0 20px 20px 0;
+        border: none;
+        color: #0a0000a0;
+        padding: 7px;
+        outline: none;
+      }
+    }
+  }
+  h1 {
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  table {
+    margin: 20px 0;
+    width: 80%;
+    border-collapse: collapse; //tüm değerler arasındaki boşlukları 0 a indirir. tablolar arasi yani
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #362f4b;
+    thead {
+      th {
+        color: white;
+        font-weight: 400;
+        padding: 30px 15px;
+      }
+    }
+    tbody {
+      background-color: white;
+      tr {
+        &:nth-child(2n) {
+          background-color: #cccccc3c;
+        }
+        th {
+          padding: 10px;
+          text-align: center;
+          img {
+            width: 30px;
+            cursor: pointer;
+            &:hover {
+              transform: scale(1.1);
+              transition: ease 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* table{
+        border-spacing: 0;
+        thead{
+            background: radial-gradient(circle at 90% 95%, rgb(158, 61, 169),rgb(55, 55, 66) , rgb(39, 73, 39));
+            tr{
+                th{
+                    padding: 10px;
+
+                }
+            }
+        }
+        tbody{
+            background: red;
+        }
+    } */
+}

@@ -1,0 +1,55 @@
+.login,
+.register {
+  h1 {
+    text-align: center;
+    margin: 50px auto 30px;
+    font-weight: 600;
+    width: 300px;
+    border-radius: 30px;
+    color: black;
+  }
+  form {
+    background-color: white;
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    @include mobile {
+      width: 100%;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      input {
+        padding: 5px;
+      }
+    }
+    button {
+      border: none;
+      padding: 8px;
+      color: white;
+      font-weight: 500;
+      border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      &:nth-child(1) {
+        background-color: #8c86c5;
+      }
+      &:nth-child(2) {
+        background-color: rgb(55, 145, 55);
+      }
+      &:nth-child(3) {
+        background-color: rgb(35, 35, 145);
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.addbook {
+  width: 100%;
+  height: calc(100vh - 82px); //headerdan geriye kalan alani temsil etmek icin
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
+  }
+
+  align-self: center;
+  justify-self: center;
+  &-form {
+    padding: 50px 50px 20px 50px;
+    background-color: white;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    
+    div {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      span {
+        font-weight: 300;
+        color: #362f4b;
+        font-weight: 500;
+      }
+      input,
+      textarea {
+        padding: 7px;
+      }
+      &:last-of-type {
+        width: 98%; //gap bosluklarida var yukaridaki
+      }
+    }
+      button {
+        margin: auto;
+        margin-top: 30px;
+        padding: 5px 15px;
+        background-color: rgb(212, 25, 41);
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+  }
+}
+
